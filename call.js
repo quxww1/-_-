@@ -1,6 +1,6 @@
 /*
-    实现call方法
-*/
+ *  实现call方法
+ */
 Function.prototype.myCall = function(context, ...arr) {
     //判断是否传入了上下文对象
     if (context == null || context == undefined) {
@@ -28,4 +28,4 @@ let fn = function(arg) {
     console.log(arg);
 };
 fn(1); // undefined undefined 1
-fn.myCall(obj,1); // 12 qux 1
+fn.myCall(obj, 1); // 12 qux 1

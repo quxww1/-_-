@@ -1,7 +1,7 @@
-/*
-    实现apply方法
-    apply接受第二个参数为类数组对象
-*/
+/**
+ * 实现apply方法
+ * apply接受第二个参数为类数组对象
+ */
 Function.prototype.myApply = function(context) {
     //判断是否传入了上下文对象
     if (context == null || context == undefined) {
